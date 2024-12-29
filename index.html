@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="asherss.jpeg">
+    <title>ASHERS SPORTS</title>
+    <style>
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .carousel-btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 bg-white shadow-lg z-50">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="ball2.jpg" alt="ASHERS SPORTS Logo" class="w-10 h-10 rounded-full object-cover">
+                <span class="ml-3 text-xl font-bold">ASHERS SPORTS</span>
+            </a>
+            <nav class="md:mr-auto md:ml-4 flex flex-wrap items-center text-base justify-center">
+                <a href="#carousel" class="mr-5 hover:text-indigo-600 transition duration-300">Home</a>
+                <a href="#reviews" class="mr-5 hover:text-indigo-600 transition duration-300">Reviews</a>
+                <a href="#products" class="mr-5 hover:text-indigo-600 transition duration-300">Products</a>
+                <a href="about.html" class="mr-5 hover:text-indigo-600 transition duration-300">About Us</a>
+            </nav>
+            <a href="products.html" class="inline-flex items-center bg-indigo-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-indigo-600 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="carousel" class="text-center py-12 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">
+        <h1 class="text-4xl font-bold text-white">Welcome to ASHERS SPORTS</h1>
+        <p class="text-lg text-gray-200 mt-4">Your one-stop shop for premium sports gear and accessories.</p>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="container mx-auto px-5 py-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Featured Products</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="mambacricket.jpg" alt="Cricket Kit" class="w-full h-64 object-cover">
+                <img src="adidas Isagi Flame Edition.jpeg" alt="Football Shoes" class="w-full h-64 object-cover">
+                <img src="tabletennispunch2.jpg" alt="Table Tennis Set" class="w-full h-64 object-cover">
+                <img src="ashuka.jpeg" alt="Flame Shoes" class="w-full h-64 object-cover">
+                <img src="gloves.jpg" alt="Gloves" class="w-full h-64 object-cover">
+                <img src="helmet.jpg" alt="Helmet" class="w-full h-64 object-cover">
+                <img src="jersey.jpg" alt="Jersey" class="w-full h-64 object-cover">
+            </div>
+            <!-- Navigation Arrows -->
+            <button class="carousel-btn left-4" onclick="moveCarousel(-1)">&#8249;</button>
+            <button class="carousel-btn right-4" onclick="moveCarousel(1)">&#8250;</button>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews" class="bg-gray-100 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Customer Reviews</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">John Doe</h3>
+                    <p class="text-gray-700 mb-4">"Absolutely loved the Mamba Cricket Kit! High quality and worth every penny."</p>
+                    <span class="text-yellow-500 text-2xl">★★★★★</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">Sarah Johnson</h3>
+                    <p class="text-gray-700 mb-4">"The Adidas Flame Edition is a must-buy for any football fan. Stylish and comfortable!"</p>
+                    <span class="text-yellow-500 text-2xl">★★★★★</span>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                    <h3 class="text-xl font-bold mb-4">Alex Brown</h3>
+                    <p class="text-gray-700 mb-4">"The Table Tennis Punch Set is fantastic. My friends and I play every weekend!"</p>
+                    <span class="text-yellow-500 text-2xl">★★★★★</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-200 py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/SpikyHighVirus" target="_blank" class="text-gray-400 hover:text-gray-300 transform hover:scale-110 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                        <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.11.793-.26.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.305 3.495.998.107-.774.42-1.305.764-1.605-2.665-.305-5.466-1.333-5.466-5.933 0-1.311.465-2.381 1.235-3.222-.123-.303-.535-1.523.118-3.176 0 0 1.007-.323 3.3 1.23.957-.266 1.983-.398 3.005-.403 1.02.005 2.047.137 3.006.403 2.29-1.553 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.841 1.233 1.911 1.233 3.222 0 4.61-2.805 5.625-5.475 5.921.432.373.82 1.107.82 2.232v3.314c0 .32.19.694.802.576C20.565 21.798 24 17.302 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/spikyhighvirus" target="_blank" class="text-gray-400 hover:text-gray-300 transform hover:scale-110 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.058 2.042.25 2.51.418a5.012 5.012 0 011.767 1.01 5.012 5.012 0 011.01 1.767c.169.467.36 1.304.418 2.51.058 1.265.07 1.645.07 4.849 0 3.204-.012 3.584-.07 4.85-.058 1.206-.25 2.042-.418 2.51a5.012 5.012 0 01-1.01 1.767 5.012 5.012 0 01-1.767 1.01c-.467.169-1.304.36-2.51.418-1.265.058-1.645.07-4.849.07-3.204 0-3.584-.012-4.85-.07-1.206-.058-2.042-.25-2.51-.418a5.012 5.012 0 01-1.767-1.01 5.012 5.012 0 01-1.01-1.767c-.169-.467-.36-1.304-.418-2.51-.058-1.265-.07-1.645-.07-4.849 0-3.204.012-3.584.07-4.85.058-1.206.25-2.042.418-2.51a5.012 5.012 0 011.01-1.767 5.012 5.012 0 011.767-1.01c.467-.169 1.304-.36 2.51-.418 1.265-.058 1.645-.07 4.849-.07zm0-2.163C8.745 0 8.333.014 7.052.072 5.776.13 4.5.288 3.423.703 2.344 1.118 1.43 1.999.703 3.423.288 4.5.13 5.776.072 7.052.014 8.333 0 8.745 0 12c0 3.255.014 3.667.072 4.948.058 1.276.216 2.552.631 3.629.414 1.076 1.296 1.99 2.719 2.717 1.077.415 2.353.573 3.629.631 1.281.058 1.693.072 4.948.072 3.255 0 3.667-.014 4.948-.072 1.276-.058 2.552-.216 3.629-.631 1.076-.414 1.99-1.296 2.717-2.719.415-1.077.573-2.353.631-3.629.058-1.281.072-1.693.072-4.948 0-3.255-.014-3.667-.072-4.948-.058-1.276-.216-2.552-.631-3.629-.414-1.076-1.296-1.99-2.719-2.717C19.448.288 18.172.13 16.896.072 15.615.014 15.203 0 12 0zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162S8.597 18.162 12 18.162s6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.324c-2.302 0-4.162-1.86-4.162-4.162S9.698 7.838 12 7.838s4.162 1.86 4.162 4.162-1.86 4.162-4.162 4.162zm6.406-11.845a1.44 1.44 0 11-2.882-.001 1.44 1.44 0 012.882.001z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-sm">© 2024 ASHERS SPORTS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel img');
+        const totalSlides = slides.length;
+
+        function moveCarousel(direction) {
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            const offset = -currentSlide * slides[0].clientWidth;
+            document.querySelector('.carousel').style.transform = `translateX(${offset}px)`;
+        }
+    </script>
+</body>
+</html>
